@@ -1,0 +1,17 @@
+h1{
+    color: $color-secundario;
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.nav a{
+    color: $color-secundario;
+    font-size: 20px;
+}
