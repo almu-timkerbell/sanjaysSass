@@ -34,7 +34,7 @@ h1{
 
 img{
     border: 50px solid black;
-    border-image: url("borderImage.png");
+    border-image: url("img/borderImage.png");
     border-image-slice: 100;
 
 }

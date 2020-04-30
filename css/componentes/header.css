@@ -1,0 +1,16 @@
+h1 {
+  color: #F9ECDC;
+  text-align: center;
+  font-family: cursive;
+  font-size: 50px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav a {
+  color: #F9ECDC;
+  font-size: 20px;
+}
