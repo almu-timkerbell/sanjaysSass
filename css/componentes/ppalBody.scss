@@ -4,3 +4,27 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+.ppalBody img{
+    width: 200px;
+    max-height: 200px;
+}
+
+
+.cakes__img,
+.savouries__img,
+.cookies__img {
+    position: relative;
+    border: 50px solid black;
+    border-image: url("../img/borderImage.png");
+    border-image-slice: 100;
+
+    &__text{
+        @include bodyPictures;
+    }
+}
+
+.cookies__img__text {
+    @include bodyPictures__cookies;
+}
+

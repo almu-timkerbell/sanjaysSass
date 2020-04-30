@@ -25,3 +25,35 @@ h1 {
   display: flex;
   justify-content: space-evenly;
 }
+
+.ppalBody img {
+  width: 200px;
+  max-height: 200px;
+}
+
+.cakes__img,
+.savouries__img,
+.cookies__img {
+  position: relative;
+  border: 50px solid black;
+  border-image: url("../img/borderImage.png");
+  border-image-slice: 100;
+}
+.cakes__img__text,
+.savouries__img__text,
+.cookies__img__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #333333;
+  color: #F9ECDC;
+}
+
+.cookies__img__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #333333;
+  color: #F9ECDC;
+  left: 20%;
+}
