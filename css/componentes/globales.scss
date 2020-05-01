@@ -1,7 +1,18 @@
 $color-primario: #333333;
 $color-secundario: #F9ECDC;
 
+@mixin bodyPictures {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: $color-primario;
+    color: $color-secundario;
+}
 
+@mixin bodyPictures__cookies ($left: 20%) {
+    @include bodyPictures();
+    left: $left;
+}
 
 body {
     background-image: url("../img/green_dust_scratch.png");
