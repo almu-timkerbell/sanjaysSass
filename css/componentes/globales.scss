@@ -1,12 +1,16 @@
 $color-primario: #333333;
 $color-secundario: #F9ECDC;
+$Fuente-principal: 'Noto Sans', sans-serif;
+$Fuente-secundaria: 'Dosis', sans-serif;
 
 @mixin bodyPictures {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     background-color: $color-primario;
     color: $color-secundario;
+    font-family: $Fuente-secundaria;
+    border: 5px solid $color-primario;
 }
 
 @mixin bodyPictures__cookies ($left: 20%) {
@@ -16,5 +20,6 @@ $color-secundario: #F9ECDC;
 
 body {
     background-image: url("../img/green_dust_scratch.png");
+    font-family: $Fuente-principal;
    
 }

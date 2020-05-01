@@ -1,11 +1,12 @@
 body {
   background-image: url("../img/green_dust_scratch.png");
+  font-family: "Noto Sans", sans-serif;
 }
 
 h1 {
   color: #F9ECDC;
   text-align: center;
-  font-family: cursive;
+  font-family: "Dosis", sans-serif;
   font-size: 50px;
 }
 
@@ -43,17 +44,36 @@ h1 {
 .savouries__img__text,
 .cookies__img__text {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   background-color: #333333;
   color: #F9ECDC;
+  font-family: "Dosis", sans-serif;
+  border: 5px solid #333333;
 }
 
 .cookies__img__text {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   background-color: #333333;
   color: #F9ECDC;
+  font-family: "Dosis", sans-serif;
+  border: 5px solid #333333;
   left: 20%;
+}
+
+.footer {
+  margin: 100px 20px 20px 10px;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__socialMedia img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+.footer__develope {
+  align-self: center;
 }
