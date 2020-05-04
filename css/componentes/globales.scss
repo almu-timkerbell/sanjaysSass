@@ -1,12 +1,17 @@
 $color-primario: #333333;
 $color-secundario: #F9ECDC;
+$Fuente-principal: 'Noto Sans', sans-serif;
+$Fuente-secundaria: 'Dosis', sans-serif;
 
 @mixin bodyPictures {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     background-color: $color-primario;
     color: $color-secundario;
+    font-family: $Fuente-secundaria;
+    border: 5px solid $color-primario;
+    box-shadow: 0px 20px 33px 0 rgba(0,0,0,0.20)
 }
 
 @mixin bodyPictures__cookies ($left: 20%) {
@@ -14,7 +19,13 @@ $color-secundario: #F9ECDC;
     left: $left;
 }
 
+@mixin bodyPicturesOnHover{
+    // width: 220px;
+    // height: 220px;
+}
+
 body {
     background-image: url("../img/green_dust_scratch.png");
+    font-family: $Fuente-principal;
    
 }
