@@ -3,10 +3,17 @@ $color-secundario: #F9ECDC;
 $Fuente-principal: 'Noto Sans', sans-serif;
 $Fuente-secundaria: 'Dosis', sans-serif;
 
-@mixin bodyPictures {
+@mixin imgCenterOfTheBody{
+    position: relative;
+    border: 50px solid black;
+    border-image: url("../img/borderImage.png");
+    border-image-slice: 100;
+}
+
+@mixin bodyPicturesText {
     position: absolute;
     top: 70%;
-    left: 50%;
+    left: 30%;
     background-color: $color-primario;
     color: $color-secundario;
     font-family: $Fuente-secundaria;
@@ -15,7 +22,7 @@ $Fuente-secundaria: 'Dosis', sans-serif;
 }
 
 @mixin bodyPictures__cookies ($left: 20%) {
-    @include bodyPictures();
+    @include bodyPicturesText();
     left: $left;
 }
 

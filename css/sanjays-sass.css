@@ -26,7 +26,6 @@ h1 {
   display: flex;
   justify-content: space-evenly;
 }
-
 .ppalBody img {
   width: 200px;
   max-height: 200px;
@@ -45,7 +44,7 @@ h1 {
 .cookies__img__text {
   position: absolute;
   top: 70%;
-  left: 50%;
+  left: 30%;
   background-color: #333333;
   color: #F9ECDC;
   font-family: "Dosis", sans-serif;
@@ -56,13 +55,20 @@ h1 {
 .cookies__img__text {
   position: absolute;
   top: 70%;
-  left: 50%;
+  left: 30%;
   background-color: #333333;
   color: #F9ECDC;
   font-family: "Dosis", sans-serif;
   border: 5px solid #333333;
   box-shadow: 0px 20px 33px 0 rgba(0, 0, 0, 0.2);
   left: 20%;
+}
+
+.cakes:hover,
+.savories:hover,
+.cookies:hover {
+  box-shadow: 20px 20px 33px 0 rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.8s ease-in-out;
 }
 
 .footer {
