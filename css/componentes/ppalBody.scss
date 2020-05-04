@@ -18,7 +18,7 @@
     border: 50px solid black;
     border-image: url("../img/borderImage.png");
     border-image-slice: 100;
-
+    // box-shadow: 20px 20px 33px 0 rgba(0,0,0,0.50);
     &__text{
         @include bodyPictures;
     }
@@ -27,4 +27,6 @@
 .cookies__img__text {
     @include bodyPictures__cookies;
 }
+
+
 

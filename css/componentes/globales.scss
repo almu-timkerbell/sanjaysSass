@@ -11,11 +11,17 @@ $Fuente-secundaria: 'Dosis', sans-serif;
     color: $color-secundario;
     font-family: $Fuente-secundaria;
     border: 5px solid $color-primario;
+    box-shadow: 0px 20px 33px 0 rgba(0,0,0,0.20)
 }
 
 @mixin bodyPictures__cookies ($left: 20%) {
     @include bodyPictures();
     left: $left;
+}
+
+@mixin bodyPicturesOnHover{
+    // width: 220px;
+    // height: 220px;
 }
 
 body {
