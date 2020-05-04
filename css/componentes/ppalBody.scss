@@ -1,26 +1,21 @@
-.ppalBody{
+.ppalBody {
     margin-top: 70px;
     margin-left: 20px;
     display: flex;
     justify-content: space-evenly;
-}
+    & img{
+        width: 200px;
+        max-height: 200px;
+        }
 
-.ppalBody img{
-    width: 200px;
-    max-height: 200px;
-}
-
+    }
 
 .cakes__img,
 .savouries__img,
 .cookies__img {
-    position: relative;
-    border: 50px solid black;
-    border-image: url("../img/borderImage.png");
-    border-image-slice: 100;
-    // box-shadow: 20px 20px 33px 0 rgba(0,0,0,0.50);
+    @include imgCenterOfTheBody;
     &__text{
-        @include bodyPictures;
+        @include bodyPicturesText;
     }
 }
 
@@ -28,5 +23,11 @@
     @include bodyPictures__cookies;
 }
 
+.cakes:hover,
+.savories:hover,
+.cookies:hover {
+    box-shadow: 20px 20px 33px 0 rgba(0,0,0,0.50);
+    transition: box-shadow 0.8s ease-in-out;
+}
 
 
